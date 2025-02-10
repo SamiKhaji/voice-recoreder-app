@@ -14,7 +14,8 @@ function Recorder({ selectedLanguage }) {
   // Play greeting at the start
   useEffect(() => {
     if (selectedLanguage) {
-      const greetingAudio = new Audio(`/voice-recorder-app/Audio/${selectedLanguage}.mp3`);
+      const greetingAudio = new Audio(`${import.meta.env.BASE_URL}Audio/${selectedLanguage}.mp3`);
+
       greetingAudioRef.current = greetingAudio;
       greetingAudio.play().catch((error) => {
         console.error('Audio playback failed:', error);
