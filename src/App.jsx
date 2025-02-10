@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import React, { useState } from 'react';
 import Recorder from './components/Recorder';
+import LanguageSelector from './components/LanguageSelector';
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
 
   return (
-      <div className="app-container">
-      <h1>Voice Recorder</h1>
-      <Recorder />
+    <div className="app-container">
+      {!selectedLanguage ? (
+        <LanguageSelector onLanguageSelect={setSelectedLanguage} />
+      ) : (
+        <Recorder selectedLanguage={selectedLanguage} />
+      )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,49 @@
+.language-selector {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .language-selector h2 {
+    font-size: 2rem;
+    color: #e94560;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #162447;
+    border-radius: 5px;
+    background-color: #1a1a2e;
+    color: #f0f0f0;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  select:hover {
+    border-color: #e94560;
+    background-color: #162447;
+  }
+  
+  select option {
+    background-color: #1a1a2e;
+    color: #f0f0f0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #162447;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #e94560;
+  }
+  

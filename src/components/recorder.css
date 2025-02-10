@@ -1,111 +1,110 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: #1a1a2e;
-    color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .app-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #e94560;
-    margin-bottom: 20px;
-  }
-  
-  .recorder-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .mic-icon {
-    font-size: 6rem;
-    margin-bottom: 20px;
-    color: #f0f0f0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .mic-icon.recording {
-    animation: pulse 1s infinite;
-    color: #e94560;
-    box-shadow: 0 0 20px #e94560;
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .button-container {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #162447;
-    color: #f0f0f0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+  font-family: 'Arial', sans-serif;
+  background: #1a1a2e;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
 
-  .startreco{
-    margin-top: 50px;
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #e94560;
+  margin-bottom: 20px;
+}
+
+.recorder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mic-icon {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mic-icon.recording {
+  animation: pulse 1s infinite;
+  color: #e94560;
+  box-shadow: 0 0 20px #e94560;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  button:hover {
-    background-color: #e94560;
+  50% {
+    transform: scale(1.2);
   }
-  
-  .audio-preview {
-    margin-top: 20px;
-    text-align: center;
+  100% {
+    transform: scale(1);
   }
-  
-  audio {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .download-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 15px;
-  }
-  
-  .download-button,
-  .drive-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #162447;
-    color: #f0f0f0;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .download-button:hover,
-  .drive-button:hover {
-    background-color: #e94560;
-  }
-  
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #162447;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.startreco{
+  margin-top: 50px;
+}
+
+button:hover {
+  background-color: #e94560;
+}
+
+.audio-preview {
+  margin-top: 20px;
+  text-align: center;
+}
+
+audio {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.download-button,
+.drive-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #162447;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.download-button:hover,
+.drive-button:hover {
+  background-color: #e94560;
+}
