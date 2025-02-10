@@ -2,6 +2,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/voice-recoreder-app/',  // Correct path for GitHub Pages
-  plugins: [react()]
+  plugins: [react()],
+  base: '/voice-recoreder-app/',  // Ensure it matches the GitHub repo name
 });
